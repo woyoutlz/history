@@ -71,6 +71,7 @@ $(function(){
 	 	
 	 });
 	 key('x',function(){
+
 	 	if (app.iframeShow) {
 	 		closeIframe();
 	 	};
@@ -80,8 +81,9 @@ $(function(){
 	 })
 	 //end
 	 function baiduTheText(word){
-	 	var link = "http://www.baidu.com/?isidx=1#wd="+word;
-	 	showIframeWithLink(link);
+	 	var link = "http://www.baidu.com?isidx=1#wd="+word;
+	 	// showIframeWithLink(link);
+	 	window.open(link);;
 	 }
 	 function closeIframe(){
 	 	app.iframeShow = false;
